@@ -15,7 +15,7 @@ def dat(m):
     if m == None:
         now = date.today()
         l = datetime.strptime(str(now), '%Y-%m-%d').date()
-        startdate = date(l.year,1,1)
+        startdate = date(l.year-1,12,28)
     else:
         startdate = datetime.now() - relativedelta(years=m)
         
